@@ -2,7 +2,7 @@
 
 Classic Gomoku (5 in a row) with bots.
 
-How to play: Each players take turn to place their stone on a 19 x 19 (and 15 x 15) Go board, Black goes first, who ever make the first 5 in a row wins. Similar to TicTacToe or Caro. Stones once placed cannot be removed. No additional limitation.
+How to play: Each players take turn to place their stone on a 19 x 19 (and 15 x 15) board, Black goes first, who ever make the first 5 in a row wins. Similar to TicTacToe or Caro. Stones once placed cannot be removed. No additional limitation.
 
 ## Configuration setup:
 
