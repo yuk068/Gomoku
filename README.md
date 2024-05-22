@@ -1,14 +1,32 @@
 # Gomoku
 
 Classic Gomoku (5 in a row) with bots.
+
 Is still a work in progress.
 
-How to play: Each players take turn to place their stone on a 19 x 19 (and 15 x 15) board, Black goes first, who ever make the first 5 in a row wins. Similar to TicTacToe or Caro. Stones once placed cannot be removed. No additional limitation.
+How to play: Each players take turn to place their stone on a 19 x 19 board, Black goes first, who ever make the first 5 in a row wins. Similar to TicTacToe or Caro. Stones once placed cannot be removed. No additional limitation.
+
+This is a test for my implementation of bots for Gomoku. I'm still trying to improve upon it, if you wish to review the bot's log, execute ***"dev_run.bat"***, or open cmd and type ***"java -jar Gomoku.jar"*** (only for Windows and you should place ***"/Gomoku"*** in a different directory other than ***"/Downloads"***), if not then you can just execute ***"Gomoku.jar"***, or run ***"run.vbs"***. Thanks for trying out my program!
+
+Compiled in Java 15
+
+## Note:
+
+### Updates:
+- Implemented transposition table to significantly sped up some of the calculations.
+- Replay mode: after a game ended you can review a game by pressing [ R ].
+- Reworked some of the bots logic.
+- Added a few new bots.
+
+### Known issues:
+- Bots can't behave correctly near the rear of the board yet.
+- Removed support for 15 x 15 board for reason mentioned above.
+- Some of them can take a very long time to think.
+- Evaluation function needs more work.
 
 ## Configuration setup:
 
 ### Standard setup:
-
 - [ N ] For new game setup
 - [ L ] To show Move Log
 
@@ -16,16 +34,17 @@ How to play: Each players take turn to place their stone on a 19 x 19 (and 15 x 
 - [ E ] To show Evaluation
 - [ I ] To show squares index
 
+### Replay mode:
+- [ R ] To enter replay mode after a game ended
+  - [ L ] To wind backwards
+  - [ K ] To wind forwards
+
 ## Bots:
+- Bullet
+- Blitz
+- Birdie
+- Standard
+- Overthinking
+- Dynamic
 
-#### Bullet: Depth = 0; Sight = 2;
 
-#### Blitz: Depth = 1; Sight = 2;
-
-#### Standard: Depth = 2; Sight = 1;
-
-#### Dynamic: behave dynamically depending on the game state;
-
-## Note:
-
-This is a test for my implementation of bots for Gomoku. Bots: Bullet and Blitz can be very fast. While Bots: Standard and Dynamic can think for a very long time, sometimes up to ~50s. I'm still trying to improve upon it, if you wish to review the bot's log, execute ***"dev_run.bat"***, or open cmd and type ***"java -jar Gomoku.jar"*** (only for Windows and you should place ***"/Gomoku"*** in a different directory other than ***"/Downloads"***), if not then you can just execute ***"Gomoku.jar"***, or run ***"run.vbs"***. Thanks for trying out my program!
