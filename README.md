@@ -16,7 +16,6 @@ Compiled in Java 15
 - Implemented transposition table to significantly sped up some of the calculations.
 - Replay mode: after a game ended you can review a game by pressing [ R ].
 - Reworked some of the bots logic.
-- Added a few new bots.
 
 ### Known issues:
 - Bots can't behave correctly near the rear of the board yet.
@@ -42,7 +41,6 @@ Compiled in Java 15
 ## Bots:
 - Bullet
 - Blitz
-- Birdie
 - Standard
 - Overthinking
 - Dynamic
