@@ -12,7 +12,6 @@ Compiled in Java 15
 
 ### Project is Archived:
 
-Update: I will try to fix the issue where it doesn't behave correctly near the bounds of the board
 Unfortunately, I have decided to finalize the project and archive the source code, you can learn more about this project on my blog: https://yuk068.github.io/
 
 ## Configuration setup:
